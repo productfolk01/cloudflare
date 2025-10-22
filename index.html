@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Hero Section</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background-color: #fffaf7;
+      color: #2c2c2c;
+    }
+
+    /* --- HERO SECTION --- */
+    .sec1 {
+      background: linear-gradient(135deg, hsla(7, 98%, 45%, 0.8), #ff8b61);
+      min-height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navbar */
+    .navbar {
+      background: transparent;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      transition: 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ffe6df !important;
+      transform: scale(1.05);
+    }
+
+    /* Hero Content */
+    .head {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .head h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+
+    
+
+    .head p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      opacity: 0.9;
+    }
+
+    .head button {
+      background-color: white;
+      color: hsla(7, 97%, 50%, 0.9);
+      border: none;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .head button:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+      .navbar {
+      padding: 1rem 3rem;
+      
+      
+    }
+
+    .navbar-brand img {
+      height: 30px;
+    }
+
+    .nav-link {
+      color: #f3eeee !important;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+ 
+
+
+    .btn-login {
+      border: 1px solid #ff6a00;
+      color: #ff6a00;
+      background-color: #fff;
+      font-weight: 500;
+      border-radius: 6px;
+      padding: 6px 16px;
+      transition: 0.3s ease;
+    }
+
+    /* --- SECOND SECTION --- */
+    .info-section {
+      text-align: center;
+      padding: 80px 20px;
+   
+    }
+
+    .info-section h2 {
+      
+     
+      margin-bottom: 20px;
+    
+         font-size: 48px;
+      line-height: 48px;
+      font-weight: 500px;
+      color: #521000;
+      letter-spacing: -2px;
+    }
+
+    .info-section p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #7a3a00;
+      font-size: 1.05rem;
+    }
+
+    .image-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+    }
+
+    .image-block img {
+      width: 85%;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease;
+    }
+
+    .image-block img:hover {
+      transform: scale(1.03);
+    }
+
+    /* --- CTA SECTION --- */
+    .sec3 {
+      background: linear-gradient(135deg, #ff714a, #ff9a73);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 12px;
+      margin: 100px 0 0;
+    }
+
+    .sec3 h1 {
+      font-size: 2.3rem;
+      margin-bottom: 15px;
+    }
+
+    .sec3 p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 1.1rem;
+    }
+
+    .sec3 button {
+      background-color: white;
+      color: #ff5a2d;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .sec3 button:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      transform: translateY(-3px);
+    }
+    .sec4{
+       text-align: center;
+      padding: 80px 20px;
+
+    }
+    .sec4 h2{
+       margin-bottom: 20px;
+    
+         font-size: 48px;
+      line-height: 48px;
+      font-weight: 500px;
+      color: #521000;
+      letter-spacing: -2px;
+
+    }
+    .sec5, .sec6,.sec7,.sec8{
+      text-align: center;
+      padding: 80px 20px;
+
+    }
+    .sec5 h2,.sec6 h2,.sec7 h2,.sec8 h2{
+      
+         font-size: 48px;
+      line-height: 48px;
+      font-weight: 500px;
+      color: #521000;
+      letter-spacing: -2px;
+
+    }
+    .sec5 p..sec6 p,.sec7 p,.sec8 p{
+      max-width: 700px;
+      margin: 0 auto;
+      color: #7a3a00;
+      font-size: 1.05rem;
+
+    }
+    
+     .feature-box {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      height: 100%;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background-color: #fff8f5;
+      color: #521000;
+      padding: 60px 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      border-top: 4px solid #f38020;
+    }
+
+    .footer-logo img {
+      width: 160px;
+      margin-bottom: 15px;
+    }
+
+    .footer-logo p {
+      color: #7a3a00;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .social-icons img {
+      width: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+      filter: brightness(0) saturate(100%) invert(28%) sepia(75%) saturate(476%) hue-rotate(10deg) brightness(97%) contrast(93%);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+      filter: none;
+    }
+
+    .footer-column h3 {
+      font-size: 18px;
+      color: #521000;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .footer-column h3::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: #f38020;
+      margin-top: 5px;
+      border-radius: 2px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      color: #7a3a00;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .footer-column ul li:hover {
+      color: #f38020;
+      transform: translateX(4px);
+    }
+
+
+    .footer-bottom {
+      background-color: #fff2eb;
+      text-align: center;
+      padding: 20px;
+      color: #521000;
+      font-size: 14px;
+      border-top: 1px solid #f2c8a2;
+    }
+
+    .footer-bottom img {
+      height: 30px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+      .footer-logo, .footer-column {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sec1">
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="assets/pp.png" alt="Cloudflare Logo" />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+
+      <!-- PLATFORM DROPDOWN -->
+<li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="platformDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Platform
+  </a>
+
+  <!-- Custom dropdown with horizontal cards -->
+  <div class="dropdown-menu p-3" aria-labelledby="platformDropdown" style="min-width: 900px;">
+    <div class="row g-3">
+
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm text-center p-3">
+          <h6 class="text-uppercase text-muted">Compute</h6>
+          <h6>Workers</h6>
+          <p class="text-secondary small mb-0">Global serverless functions.</p>
+          <h6>Containers</h6>
+          <p class="text-secondary small mb-0">Any language anywhere</p>
+          <h6>Durable Objects</h6>
+          <p class="text-secondary small mb-0">Statefull compute</p>
+          <h6>Browser Rendering</h6>
+          <p class="text-secondary small mb-0">Automated Browsers</p>
+
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm text-center p-3">
+          <h6 class="text-uppercase text-muted">storage</h6>
+          <h6 class="fw-bold">R2</h6>
+          <p class="text-secondary small mb-0">Global Database</p>
+          <h6>D1</h6>
+          <p>Serverless SQL</p>
+          <h6>KV</h6>
+          <p class="text-secondary small mb-0">Key -value space</p>
+          <h6>Queues</h6>
+          <p class="text-secondary small mb-0">message processing</p>
+
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm text-center p-3">
+          <h6 class="text-uppercase text-muted">AI</h6>
+          <h6>Workers AI</h6>
+          <p class="text-secondary small mb-0">edge AI models.</p>
+          <h6>AI Gateway</h6>
+          <p class="text-secondary small mb-0">AI observability</p>
+          <h6>Vectorize</h6>
+          <p class="text-secondary small mb-0">Vector database</p>
+          <h6>AI Search</h6>
+          <p class="text-secondary small mb-0">Instant retrieval</p>
+
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm text-center p-3">
+          <h6 class="text-uppercase text-muted">Media</h6>
+          <h6>Images</h6>
+          <p class="text-secondary small mb-0">image optimization.</p>
+          <h6>Stream</h6>
+          <p class="text-secondary small mb-0">Video streaming</p>
+          <h6 class="fw-bold">RealtimeKit</h6>
+          <p class="text-secondary small mb-0">live comms</p>
+          <h6 class="fw-bold">Browser Rendering</h6>
+          <p class="text-secondary small mb-0">Automated Browsers</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+       
+     
+
+      <!-- PRODUCTS DROPDOWN -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="productsDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Products
+        </a>
+        <ul class="dropdown-menu p-3" aria-labelledby="productsDropdown" style="width: 320px;">
+          <li>
+            <h6 class="dropdown-header">Security</h6>
+            <p class="small text-muted mb-0">
+              Protect your sites and APIs with built-in DDoS mitigation, SSL, and bot management.
+            </p>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <h6 class="dropdown-header">Performance</h6>
+            <p class="small text-muted mb-0">
+              Speed up your content delivery using edge caching and smart routing across 330+ cities.
+            </p>
+          </li>
+        </ul>
+      </li>
+
+      <!-- REGULAR LINKS -->
+      <li class="nav-item"><a class="nav-link" href="#">Developers</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+    </ul>
+
+    <div class="d-flex align-items-center gap-2">
+      <a href="#" class="btn btn-login">Log in</a>
+      <a href="#" class="btn btn-sales">Contact sales</a>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Hero Content -->
+    <div class="head">
+      <h1>Everything we learned from powering <br>20% of the Internet—yours by default</h1>
+      <p>Cloudflare is your AI Cloud with compute, AI inference, and storage — letting you ship applications instead of managing infrastructure.</p>
+      <button>Start Building</button>
+    </div>
+  </div>
+
+  <!-- Info Section -->
+  <div class="info-section">
+    <h2>The cloud that works for developers,<br> not the other way around</h2>
+    <p>Deploy serverless functions, frontends, containers, and databases to 330+ cities with one command.</p>
+  </div>
+
+  <div class="image-block">
+    <img src="assets/bi1.png" alt="Hero Image 1">
+  </div>
+  <div class="sec4" >
+    <h2>Region: Earth</h2>
+    <p>Our smart network positions your workloads optimally — close to users, close to data.
+
+
+</p>
+
+  </div>
+ <div class="image-block">
+    <img src="assets/b2.png" alt="Hero Image 2">
+  </div>
+
+
+
+
+
+   <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- Box 1 -->
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-icon">🌍</div>
+          <h5>Run Everywhere</h5>
+          <p>Run code in <strong>330+ cities</strong> around the world, within <strong>50ms</strong> of 95% of the world's population.</p>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-icon">⚡</div>
+          <h5>Lightning Fast</h5>
+          <p>Deploy functions globally and deliver content instantly with edge routing and optimized caching.</p>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-icon">🛡️</div>
+          <h5>Secure by Design</h5>
+          <p>Built-in DDoS protection, SSL/TLS encryption, and regional failover ensure your apps stay online and safe.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div  class="sec5">
+    <h2>
+        Cloudflare powers
+1 in 5 sites on the Internet 
+    </h2>
+    <p>Trusted by the teams you trust. And thousands more...</p>
+      <div class="logo-container" style="align-items: center;">
+    <img src="https://via.placeholder.com/100x60?text=Logo1" alt="Logo 1">
+    <img src="https://via.placeholder.com/100x60?text=Logo2" alt="Logo 2">
+    <img src="https://via.placeholder.com/100x60?text=Logo3" alt="Logo 3">
+    <img src="https://via.placeholder.com/100x60?text=Logo4" alt="Logo 4">
+    <img src="https://via.placeholder.com/100x60?text=Logo5" alt="Logo 5">
+    <img src="https://via.placeholder.com/100x60?text=Logo6" alt="Logo 6">
+  </div>
+
+
+
+
+  </div>
+
+    </div>
+ <div class="image-block">
+    <img src="assets/last.png" alt="Hero Image 2">
+  </div>
+  <div class="sec6">
+    <h2>Go from localhost to global
+in minutes</h2>
+<p>No DevOps. Minimal cold starts. No surprise bills.</p>
+  </div>
+    </div>
+ <div class="image-block">
+    <img src="assets/last1.png" alt="Hero Image 2">
+  </div>
+    </div>
+ <div class="image-block">
+    <img src="assets/last2.png" alt="Hero Image 2">
+  </div>
+  <div class="sec7">
+    <h2>Pay only when your code runs 
+</h2>
+<p>(Not to keep servers warm)</p>
+  </div>
+  </div>
+ <div class="image-block">
+    <img src="assets/last3.png" alt="Hero Image 2">
+  </div>
+    <div class="sec8">
+    <h2>Tailored to your working style
+</h2>
+<p>Always simple, fast, and reliable.</p>
+  </div>
+  <div class="image-block">
+    <img src="assets/last6.png" alt="Hero Image 2">
+  </div>
+
+
+
+
+
+
+
+ 
+
+  <!-- CTA Section -->
+  <div class="sec3">
+    <h1>Power your web faster, safer, and smarter</h1>
+    <p>Everything we’ve learned from powering 20% of the internet — available for your apps, APIs, and infrastructure.</p>
+    <button>Start Now</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/Screenshot 2025-10-21 111801.png" alt="Logo" />
+      <p>Protecting and accelerating the internet since 2010.</p>
+      <div class="social-icons">
+        <img src="assets/download.png" alt="">
+        
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Getting Started</h3>
+      <ul>
+        <li>Free Plans</li>
+        <li>Free Enterprises</li>
+        <li>Compare Plans</li>
+        <li>Domain Name Search</li>
+        <li>Get a Recommendation</li>
+        <li>Request a Demo</li>
+        <li>Contact Sales</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Resources</h3>
+      <ul>
+        <li>Documentation</li>
+        <li>Learning Center</li>
+        <li>Analyst Reports</li>
+        <li>Cloudflare Radar</li>
+        <li>Reference Architectures</li>
+        <li>Case Studies</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Solutions</h3>
+      <ul>
+        <li>Connectivity Cloud</li>
+        <li>SSE and SASE Services</li>
+        <li>Application Services</li>
+        <li>Network Services</li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <img src="assets/download.png" alt="Logo" />
+    © 2025 cloudflare.inc  </div>
+</body>
+</html>
